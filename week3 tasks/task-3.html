@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 3 - Flexbox Centering</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #a2a842;
+      color: white;
+      
+      display: flex;
+      justify-content: center; 
+      align-items: center;     
+      min-height: 100vh;
+    }
+
+    .center-card {
+      background-color: #916141;
+      border: 2px solid #58a6ff;
+      border-radius: 12px;
+      padding: 30px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .circle-dot {
+      width: 50px;
+      height: 50px;
+      background-color: #8fb150;
+      border: 1px solid #58a6ff;
+      color: #58a6ff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 0 auto 15px auto;
+      font-size: 20px;
+    }
+
+    .center-card h2 {
+      margin-top: 0;
+    }
+
+    .center-card p {
+      color: #8b949e;
+      font-size: 14px;
+      line-height: 1.5;
+    }
+
+    .code-box {
+      background-color: #0d1117;
+      border: 1px solid #30363d;
+      padding: 8px;
+      border-radius: 6px;
+      font-family: monospace;
+      color: #58a6ff;
+      font-size: 12px;
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="center-card">
+    <div class="circle-dot">&#8226;</div>
+    <h2>Flexbox Centering</h2>
+    <p>
+      By combining <code>justify-content: center</code> along the Main Axis with <code>align-items: center</code> along the Cross Axis inside a <code>min-height: 100vh</code> container, this item is centered with pixel-level precision on any screen size.
+    </p>
+    <div class="code-box">
+      display: flex; justify-content: center; align-items: center;
+    </div>
+  </div>
+
+</body>
+</html>

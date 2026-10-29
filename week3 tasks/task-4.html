@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 - Responsive Bio Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #23a529;
+            padding: 20px;
+        }
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            background-color: #301fcc;
+            border: 1px solid #9fac30;
+            border-radius: 16px;
+            padding: 24px;
+            gap: 24px;
+            max-width: 520px;
+            width: 100%;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.35);
+        }
+        .sobi {
+            flex-shrink: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .sobi img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #cf2bb9;
+            display: block;
+        }
+        .info {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+        }
+        .info h1 {
+            font-size: 20px;
+            color: #f8fafc;
+            font-weight: 600;
+        }
+        .info p {
+            font-size: 14px;
+            color: #94a3b8;
+            line-height: 1.4;
+        }
+        .links {
+            margin-top: 4px;
+        }
+        .links a {
+            color: #c2682d;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 14px;
+            transition: color 0.2s ease;
+        }
+        .links a:hover {
+            color: #7dd3fc;
+            text-decoration: underline;
+        }
+        .links span {
+            color: #475569;
+            margin: 0 6px;
+        }
+        @media (max-width: 480px) {
+            .card {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+                gap: 16px;
+            }
+            .info {
+                align-items: center;
+            }
+            .sobi img {
+                width: 100px;
+                height: 100px;
+            }
+            .info h1 {
+                font-size: 18px;
+            }
+        }
+        ::-webkit-scrollbar { display: none; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="sobi">
+            <img src="1000062067.jpg" alt="Kazi Abdun Nur Tusher">
+        </div>
+        <div class="info">
+            <h1>Kazi Abdun Nur Tusher</h1>
+            <p>CSE Undergraduate | Web Developer</p>
+            <div class="links">
+                <a href="https://github.com/Sakib20050413" 
+target="_blank">GitHub</a>
+                <span>|</span>
+                <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

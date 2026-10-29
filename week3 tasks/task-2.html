@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 2 - Media Query Colors</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: #7166cf; 
+      color: white;
+    }
+
+    .box {
+      background-color: #2b00a0;
+      border: 2px solid #ff99a8;
+      border-radius: 12px;
+      padding: 25px;
+      max-width: 450px;
+      width: 90%;
+      text-align: center;
+    }
+    .tag {
+      background-color: #ffccd2;
+      color: #260080;
+      padding: 5px 12px;
+      font-weight: bold;
+      font-size: 12px;
+      border-radius: 15px;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    @media (min-width: 480px) and (max-width: 767px) {
+      body {
+        background-color: #004d26; /* Dark Green */
+      }
+      .box {
+        background-color: #006633;
+        border-color: #80ffbf;
+      }
+      .tag {
+        background-color: #ccffeb;
+        color: #004d26;
+      }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      body {
+        background-color: #d6ab36e1; 
+      }
+      .box {
+        background-color: #7eaa38;
+        border-color: #9999ff;
+      }
+      .tag {
+        background-color: #e6e6ff;
+        color: #1a1a40;
+      }
+    }
+    @media (min-width: 1025px) {
+      body {
+        background-color: #ca3e8b; 
+      }
+      .box {
+        background-color: #ca5c9c;
+        border-color: #33b9d1;
+      }
+      .tag {
+        background-color: #0284c7;
+        color: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <span class="tag">ADAPTIVE THEME ACTIVE</span>
+    <h1>Media Query Color Test</h1>
+    <p>
+      This viewport dynamically changes its color scheme across standard breakpoints:
+      Mobile (&lt;480px: Red), Tablet (480px-767px: Green), Laptop (768px-1024px: Indigo), and Desktop (&gt;1024px: Slate Blue).
+    </p>
+  </div>
+
+</body>
+</html>

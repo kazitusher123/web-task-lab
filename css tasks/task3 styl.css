@@ -1,0 +1,48 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: lightgray;
+    margin: 20px;
+}
+h1 {
+    text-align: center;
+    color: darkblue;
+}
+.table-container {
+    width: 90%;
+    margin: auto;
+    background-color: white;
+    padding: 15px;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+th, td {
+    border: 1px solid gray;
+    padding: 10px;
+}
+th {
+    background-color: darkblue;
+    color: white;
+}
+tbody tr:nth-child(even) {
+    background-color: lightblue;
+}
+tbody tr:hover {
+    background-color: skyblue;
+}
+.department {
+    background-color: lightcyan;
+    color: darkblue;
+    font-weight: bold;
+}
+.grade {
+    color: green;
+    font-weight: bold;
+}
+tfoot {
+    background-color: lightgreen;
+    font-weight: bold;
+}

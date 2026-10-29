@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Task 1 - Fluid Image</title>
+  <style>
+    body {
+      background-color: #be682ed7;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+    .main-box {
+      background-color: #427d8fe8;
+      border: 1px solid #4a522e;
+      border-radius: 12px;
+      padding: 20px;
+      max-width: 600px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .main-box h2 {
+      color: #6ca1d6a2;
+      margin-bottom: 5px;
+    }
+    .sub-title {
+      color: #a0c0a3d8;
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+    .img-box {
+      border: 2px solid #4dff9de7;
+      border-radius: 8px;
+      overflow: hidden;
+      margin-bottom: 15px;
+      background-color: #000;
+    }
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+
+    .note {
+      background-color: #23324a;
+      border-left: 4px solid #4da6ff;
+      padding: 10px;
+      font-size: 13px;
+      text-align: left;
+      border-radius: 4px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-box">
+    <h2>Responsive Fluid Image</h2>
+    <p class="sub-title">Demonstration of Fluid Media scaling dynamically without viewport overflow</p>    
+    <div class="img-box">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTFoYHqhKtmIHedz9zY7HVfQJQDXTvxImH4J3imW68cDA&s=10" alt="Product Image" class="responsive-img">
+    </div>
+    <div class="note">
+      <b>Rule Applied:</b> <code>max-width: 100%; height: auto; display: block;</code><br>
+      The image smoothly scales with its parent container's fluid width, preventing any horizontal scrollbar on mobile devices while preserving aspect ratio.
+    </div>
+  </div>
+
+</body>
+</html>
